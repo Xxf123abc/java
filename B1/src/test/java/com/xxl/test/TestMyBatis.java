@@ -23,10 +23,10 @@ public class TestMyBatis {
 	private static Logger logger = Logger.getLogger(TestMyBatis.class);
 	
 	@Autowired
-	private UserService userService = null;
+	private UserService userService;
 	
 	@Autowired
-	private ClassService classService = null;
+	private ClassService classService;
 	
 	@Test
 	public void test1(){
