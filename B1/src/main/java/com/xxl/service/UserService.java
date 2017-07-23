@@ -12,5 +12,6 @@ public interface UserService {
 	
 	public void inset(UserT u);
 	
+	public String getPassWd(int id);
 	
 }

@@ -171,7 +171,45 @@
             <artifactId>commons-codec</artifactId>    
             <version>1.9</version>    
         </dependency>    
-  </dependencies>
+        <!--=================================对外接口模块 =========================-->
+  		<dependency>
+				<groupId>com.fuiou.xxl</groupId>
+				<artifactId>dubbo-interface</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+	    </dependency>
+	    <!--================================= Dubbo相关 =========================-->
+		<!-- https://mvnrepository.com/artifact/com.alibaba/dubbo -->
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>dubbo</artifactId>
+		    <version>2.5.3</version>
+		    <exclusions>
+				<exclusion>
+					<artifactId>spring</artifactId>
+					<groupId>org.springframework</groupId>
+					</exclusion>
+				</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.18.1-GA</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+		<dependency>
+		    <groupId>io.netty</groupId>
+		    <artifactId>netty-all</artifactId>
+		    <version>4.0.20.Final</version>
+		</dependency>
+
+		<!-- ZK-client -->
+		<dependency>
+			<groupId>com.github.sgroschupf</groupId>
+			<artifactId>zkclient</artifactId>
+			<version>0.1</version>
+		</dependency>
+	 </dependencies>
 
   <build>
     <finalName>B1</finalName>
